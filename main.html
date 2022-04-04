@@ -5,34 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100&family=Karla:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section class="section_signUp">
-        <h1>Sign Up Platform</h1>
-        <form>
-            <input type="text" placeholder="username" id="usernameInput">
-            <input type="text" placeholder="password" id="passwordInput">
-
-            <button id="signUp">Sign Up</button>
-    
-        </form>
+    <div class="row u-mb-l">
+        <section class="section_signUp col-1-of-2 align-center" >
+            <h1 class="heading_main u-mb-l">Sign Up Platform</h1>
+            <form class="form align-center">
+                <input type="text" placeholder="Username" id="usernameInput" class="input u-mb-l" required>
+                
+                <input type="text" placeholder="Password" id="passwordInput" class="input u-mb-l"  required>
+                
+                <input type="email" placeholder="Email address" id="email_Input" class="input u-mb-m" required>
+                
+                <div class="radio u-mb-m">
+                    <div class="radio_group">
+                        <input type="radio" class="radio-btn" id="male" name = "radio-bt">
+                        <label for=" male" class=" ">Male</label>
+                    </div>
+                    <div class="radio_group">
+                        <input type="radio"class=" radio-btn" id="female" name = "radio-bt">
+                     <label for=" female" class=" ">Female</label>
+                    </div>
+                </div>
+                
+                
+                <button id="signUp" class="btn u-mb-m">Sign Up</button>
         
+            </form>
+            
+            
+        </section>
+        
+        <section class="section_signIn col-1-of-2 align-center">
+            <h1 class="heading_main u-mb-l">Sign In Platform</h1>
+            <form class="form align-center">
+                <input type="text" placeholder="Username" id="userInput" class="input u-mb-l" required>
+                
+                <input type="text" placeholder="Password " id="passInput" class="input u-mb-l" required>
+                
+    
+                <button id="signIn" class="btn u-mb-m">Sign In</button>
+            </form>
+        </section>
 
-    <h2>List of Usernames and Passwords</h2>
-    <ul>
+        
+    </div>
+    <div class="section_users align-center " >
+        <h2 class="heading_main u-mb-l">List of Usernames and Passwords</h2>
+        <ul class="user_list">
 
-    </ul>
-    </section>
-    </br></br</br</br></br></br>
-    <section class="section_signIn">
-        <h1>Sign In Platform</h1>
-        <form>
-            <input type="text" placeholder="username" id="userInput">
-            <input type="text" placeholder="password" id="passInput">
+        </ul>
 
-            <button id="signIn">Sign In</button>
-        </form>
-    </section>
+    </div>
+    
     
 
 
